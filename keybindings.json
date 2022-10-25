@@ -88,6 +88,12 @@
         "command": "workbench.action.focusAboveGroup",
         "when": "inSearchEditor && inputBoxFocus|| inputBoxFocus && searchViewletVisible"
     },
+    // 在文件浏览界面，只需按 esc，就可回到编辑器
+    {
+        "key": "escape",
+        "command": "workbench.action.focusAboveGroup",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
     // 缩小
     {
         "key": "ctrl+left",
