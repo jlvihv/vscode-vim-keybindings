@@ -192,8 +192,50 @@
             "commands": [
                 "workbench.action.closeEditorsInGroup"
             ]
+        },
+        // 移动到上一个标签组
+        {
+            "before": [
+                "<leader>",
+                "H"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToPreviousGroup"
+            ]
+        },
+        // 移动到下一个标签组
+        {
+            "before": [
+                "<leader>",
+                "L"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToNextGroup"
+            ]
+        },
+        // 全部折叠
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "c"
+            ],
+            "commands": [
+                "editor.foldAll"
+            ]
+        },
+        // 全部展开
+        {
+            "before": [
+                "<leader>",
+                "z",
+                "o"
+            ],
+            "commands": [
+                "editor.unfoldAll"
+            ]
         }
-    ],
+    ]
     // 非插入模式下禁用输入法，这是 linux 下 fcitx5 输入法的设置，不具有普适性，可以根据参考自行修改
     // 参考链接 https://github.com/VSCodeVim/Vim#input-method
     // "vim.autoSwitchInputMethod.enable": true,
