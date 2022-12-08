@@ -7,27 +7,6 @@
     "vim.useCtrlKeys": false,
     // leader key 设置为空格
     "vim.leader": "<space>",
-    // 插入模式下的键绑定，快速按 jj 或者 jk 退出插入模式
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "j"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        },
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "<Esc>"
-            ]
-        }
-    ],
     // 普通模式下的键绑定
     "vim.normalModeKeyBindingsNonRecursive": [
         // 格式化代码
@@ -89,6 +68,16 @@
             ],
             "commands": [
                 "editor.action.goToImplementation"
+            ]
+        },
+        // 回退到上一个位置
+        {
+            "before": [
+                "g",
+                "b"
+            ],
+            "commands": [
+                "workbench.action.navigateBack"
             ]
         },
         // 全局搜索文件名
