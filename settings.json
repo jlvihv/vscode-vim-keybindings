@@ -1,234 +1,139 @@
 {
-    // 使用系统剪贴板
-    "vim.useSystemClipboard": true,
-    // 智能行号
-    "vim.smartRelativeLine": true,
-    // 不使用 ctrl 键
-    "vim.useCtrlKeys": false,
-    // leader key 设置为空格
-    "vim.leader": "<space>",
-    // 普通模式下的键绑定
-    "vim.normalModeKeyBindingsNonRecursive": [
-        // 格式化代码
-        {
-            "before": [
-                "<leader>",
-                "l",
-                "f"
-            ],
-            "commands": [
-                "editor.action.formatDocument"
-            ]
-        },
-        // 变量符号重命名
-        {
-            "before": [
-                "<leader>",
-                "l",
-                "r"
-            ],
-            "commands": [
-                "editor.action.rename"
-            ]
-        },
-        // 定义速览
-        {
-            "before": [
-                "K"
-            ],
-            "commands": [
-                "editor.action.showHover"
-            ]
-        },
-        // 转到定义
-        {
-            "before": [
-                "g",
-                "d"
-            ],
-            "commands": [
-                "editor.action.revealDefinition"
-            ]
-        },
-        // 转到引用
-        {
-            "before": [
-                "g",
-                "r"
-            ],
-            "commands": [
-                "editor.action.goToReferences"
-            ]
-        },
-        // 转到实现
-        {
-            "before": [
-                "g",
-                "i"
-            ],
-            "commands": [
-                "editor.action.goToImplementation"
-            ]
-        },
-        // 回退到上一个位置
-        {
-            "before": [
-                "g",
-                "b"
-            ],
-            "commands": [
-                "workbench.action.navigateBack"
-            ]
-        },
-        // 全局搜索文件名
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "f"
-            ],
-            "commands": [
-                "workbench.action.quickOpen"
-            ]
-        },
-        // 全局搜索文字
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.terminal.searchWorkspace"
-            ]
-        },
-        // 切换最左侧图标面板可见性
-        {
-            "before": [
-                "<leader>",
-                "s",
-                "a"
-            ],
-            "commands": [
-                "workbench.action.toggleActivityBarVisibility"
-            ]
-        },
-        // 打开文件浏览器
-        {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "commands": [
-                "workbench.view.explorer"
-            ]
-        },
-        // 关闭当前标签页
-        {
-            "before": [
-                "<leader>",
-                "c"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
-        },
-        // 退出 vscode
-        {
-            "before": [
-                "<leader>",
-                "q"
-            ],
-            "commands": [
-                "workbench.action.closeWindow"
-            ]
-        },
-        // 保存文件
-        {
-            "before": [
-                "<leader>",
-                "w"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
-        },
-        // 组中上一个标签页
-        {
-            "before": [
-                "H"
-            ],
-            "commands": [
-                "workbench.action.previousEditorInGroup"
-            ]
-        },
-        // 组中下一个标签页
-        {
-            "before": [
-                "L"
-            ],
-            "commands": [
-                "workbench.action.nextEditorInGroup"
-            ]
-        },
-        // 关闭标签组
-        {
-            "before": [
-                "<leader>",
-                "g",
-                "c"
-            ],
-            "commands": [
-                "workbench.action.closeEditorsInGroup"
-            ]
-        },
-        // 移动到上一个标签组
-        {
-            "before": [
-                "<leader>",
-                "H"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToPreviousGroup"
-            ]
-        },
-        // 移动到下一个标签组
-        {
-            "before": [
-                "<leader>",
-                "L"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToNextGroup"
-            ]
-        },
-        // 全部折叠
-        {
-            "before": [
-                "<leader>",
-                "z",
-                "c"
-            ],
-            "commands": [
-                "editor.foldAll"
-            ]
-        },
-        // 全部展开
-        {
-            "before": [
-                "<leader>",
-                "z",
-                "o"
-            ],
-            "commands": [
-                "editor.unfoldAll"
-            ]
-        }
-    ]
-    // 非插入模式下禁用输入法，这是 linux 下 fcitx5 输入法的设置，不具有普适性，可以根据参考自行修改
-    // 参考链接 https://github.com/VSCodeVim/Vim#input-method
-    // "vim.autoSwitchInputMethod.enable": true,
-    // "vim.autoSwitchInputMethod.defaultIM": "1",
-    // "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx5-remote",
-    // "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx5-remote -t {im}"
+  // 使用系统剪贴板
+  "vim.useSystemClipboard": true,
+  // 智能行号
+  "vim.smartRelativeLine": true,
+  // 不使用 ctrl 键
+  "vim.useCtrlKeys": false,
+  // leader key 设置为空格
+  "vim.leader": "<space>",
+  // 普通模式下的键绑定
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // 格式化代码
+    {
+      "before": ["<leader>", "l", "f"],
+      "commands": ["editor.action.formatDocument"]
+    },
+    // 变量符号重命名
+    {
+      "before": ["<leader>", "l", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    // 定义速览
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    // 转到定义
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    // 转到引用
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    // 转到实现
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    // 回退到上一个位置
+    {
+      "before": ["g", "b"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    // 全局搜索文件名
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    // 全局搜索文字
+    {
+      "before": ["<leader>", "f", "w"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    // 切换最左侧图标面板可见性
+    {
+      "before": ["<leader>", "s", "a"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
+    },
+    // 打开文件浏览器
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    // 关闭当前标签页
+    {
+      "before": ["<leader>", "c"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    // 退出 vscode
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeWindow"]
+    },
+    // 保存文件
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    // 组中上一个标签页
+    {
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditorInGroup"]
+    },
+    // 组中下一个标签页
+    {
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    // 关闭标签组
+    {
+      "before": ["<leader>", "g", "c"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    // 移动到上一个标签组
+    {
+      "before": ["<leader>", "H"],
+      "commands": ["workbench.action.moveEditorToPreviousGroup"]
+    },
+    // 移动到下一个标签组
+    {
+      "before": ["<leader>", "L"],
+      "commands": ["workbench.action.moveEditorToNextGroup"]
+    },
+    // 全部折叠
+    {
+      "before": ["<leader>", "z", "c"],
+      "commands": ["editor.foldAll"]
+    },
+    // 全部展开
+    {
+      "before": ["<leader>", "z", "o"],
+      "commands": ["editor.unfoldAll"]
+    },
+    // gh 到行头
+    {
+      "before": ["g", "h"],
+      "commands": ["cursorHome"]
+    },
+    // gl 到行尾
+    {
+      "before": ["g", "l"],
+      "commands": ["cursorEnd"]
+    },
+    // ge 到文件尾
+    {
+      "before": ["g", "e"],
+      "commands": ["cursorBottom"]
+    }
+  ]
+  // 非插入模式下禁用输入法，这是 linux 下 fcitx5 输入法的设置，不具有普适性，可以根据参考自行修改
+  // 参考链接 https://github.com/VSCodeVim/Vim#input-method
+  // "vim.autoSwitchInputMethod.enable": true,
+  // "vim.autoSwitchInputMethod.defaultIM": "1",
+  // "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/bin/fcitx5-remote",
+  // "vim.autoSwitchInputMethod.switchIMCmd": "/usr/bin/fcitx5-remote -t {im}"
 }

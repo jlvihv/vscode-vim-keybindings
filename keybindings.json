@@ -1,107 +1,157 @@
 // 将键绑定放在此文件中以覆盖默认值
 [
-    // 上一个标签组
-    {
-        "key": "ctrl+h",
-        "command": "workbench.action.focusLeftGroup"
-    },
-    // 下一个标签组
-    {
-        "key": "ctrl+l",
-        "command": "workbench.action.focusRightGroup"
-    },
-    // 刷新文件浏览器
-    {
-        "key": "shift+r",
-        "command": "workbench.files.action.refreshFilesExplorer",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 重命名
-    {
-        "key": "r",
-        "command": "renameFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 新建文件
-    {
-        "key": "a",
-        "command": "explorer.newFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 新建文件夹
-    {
-        "key": "shift+a",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 删除
-    {
-        "key": "d",
-        "command": "deleteFile",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 复制
-    {
-        "key": "y",
-        "command": "filesExplorer.copy",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 剪切
-    {
-        "key": "x",
-        "command": "filesExplorer.cut",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 粘贴
-    {
-        "key": "p",
-        "command": "filesExplorer.paste",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    // 打开文件
-    {
-        "key": "o",
-        "command": "explorer.openAndPassFocus",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
-    },
-    // 在新标签组打开文件
-    {
-        "key": "shift+o",
-        "command": "explorer.openToSide",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
-    },
-    // 全局搜索后，在输入框按回车，即可聚焦到搜索结果列表
-    {
-        "key": "enter",
-        "command": "search.action.focusSearchList",
-        "when": "inSearchEditor && inputBoxFocus && hasSearchResult || inputBoxFocus && searchViewletVisible && hasSearchResult"
-    },
-    // 在搜索结果列表，只需按 esc，就可回到搜索输入框
-    {
-        "key": "escape",
-        "command": "workbench.action.findInFiles",
-        "when": "searchViewletVisible && hasSearchResult && searchViewletFocus"
-    },
-    // 在搜索输入框，只需按 esc，就可回到编辑器
-    {
-        "key": "escape",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "inSearchEditor && inputBoxFocus|| inputBoxFocus && searchViewletVisible"
-    },
-    // 在文件浏览界面，只需按 esc，就可回到编辑器
-    {
-        "key": "escape",
-        "command": "workbench.action.focusFirstEditorGroup",
-        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
-    },
-    // 缩小
-    {
-        "key": "ctrl+left",
-        "command": "workbench.action.decreaseViewSize"
-    },
-    // 扩大
-    {
-        "key": "ctrl+right",
-        "command": "workbench.action.increaseViewSize"
-    }
+  // 上一个标签组
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  // 下一个标签组
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  // 刷新文件浏览器
+  {
+    "key": "shift+r",
+    "command": "workbench.files.action.refreshFilesExplorer",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 重命名
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 新建文件
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 新建文件夹
+  {
+    "key": "shift+a",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 删除
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 复制
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 剪切
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 粘贴
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  // 打开文件
+  {
+    "key": "o",
+    "command": "explorer.openAndPassFocus",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  // 在新标签组打开文件
+  {
+    "key": "shift+o",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder && !inputFocus"
+  },
+  // 全局搜索后，在输入框按回车，即可聚焦到搜索结果列表
+  {
+    "key": "enter",
+    "command": "search.action.focusSearchList",
+    "when": "inSearchEditor && inputBoxFocus && hasSearchResult || inputBoxFocus && searchViewletVisible && hasSearchResult"
+  },
+  // 在搜索结果列表，只需按 esc，就可回到搜索输入框
+  {
+    "key": "escape",
+    "command": "workbench.action.findInFiles",
+    "when": "searchViewletVisible && hasSearchResult && searchViewletFocus"
+  },
+  // 在搜索输入框，只需按 esc，就可回到编辑器
+  {
+    "key": "escape",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "inSearchEditor && inputBoxFocus|| inputBoxFocus && searchViewletVisible"
+  },
+  // 在文件浏览界面，只需按 esc，就可回到编辑器
+  {
+    "key": "escape",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+  },
+  // 缩小
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  // 扩大
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "tab",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "shift+tab",
+    "command": "selectPrevSuggestion",
+    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "ctrl+right",
+    "command": "-editor.action.inlineSuggest.acceptNextWord",
+    "when": "inlineSuggestionVisible && !editorReadonly"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "editor.action.inlineSuggest.undo",
+    "when": "canUndoInlineSuggestion && !editorReadonly"
+  },
+  {
+    "key": "ctrl+left",
+    "command": "-editor.action.inlineSuggest.undo",
+    "when": "canUndoInlineSuggestion && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+  }
 ]
