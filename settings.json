@@ -9,6 +9,11 @@
   "vim.leader": "<space>",
   // 普通模式下的键绑定
   "vim.normalModeKeyBindingsNonRecursive": [
+    // 进入块可视化模式，blockwise visual mode
+    {
+      "before": ["<leader>", "v"],
+      "after": ["<C-v>"]
+    },
     // 格式化代码
     {
       "before": ["<leader>", "l", "f"],
